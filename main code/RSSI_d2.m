@@ -1,9 +1,11 @@
 %load('data');
+clc;clear;close all;
+
 %% 数据说明
 %fingerprint:   指纹数据库,7m*4m, 6AP
 %RSS:    6组测试数据的RSS
 %p:   6组测试数据的真实位置
-
+load('finger1');load('finger2');
 %% KNN算法
 n = 3;%使用AP的数目，这里使用全部3个（<=n_AP）
 k = 1;%求均值的样本量
